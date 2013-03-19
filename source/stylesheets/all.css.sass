@@ -1,0 +1,337 @@
+@import compass
+@import compass/reset
+
+$default-font: Arial
+$default-width: 900px
+
+#header-wrap
+  +clearfix
+  background-color: #000
+
+#header
+  +clearfix
+  width: $default-width
+  height: 30px
+  margin: 0 auto
+  position: relative
+
+#contact-info
+  +clearfix
+  font-family: $default-font
+  font-size: 12px
+  color: #565656
+  padding: 2px 0
+  position: absolute
+  top: 5px
+  right: 150px
+
+#contact-info-address
+  padding: 0 10px
+  &:hover
+    color: #fff
+
+#contact-info-phone
+  padding: 0 10px
+  &:hover
+    color: #fff
+
+#contact-info-link
+  font-weight: bold
+  color: #2383a6
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+#social-networks
+  +clearfix
+  position: absolute
+  top: 5px
+  right: 0px
+
+#sn-hint
+  +float-left
+  +clearfix
+  font-family: $default-font
+  font-size: 12px
+  color: #565656
+  padding: 2px 5px
+  &:hover
+    color: #fff
+
+#sn-facebook
+  +float-left
+  +clearfix
+
+#sn-facebook-link
+  +hide-text
+  background: image-url( "sprite/facebook.png" ) no-repeat
+  display: block
+  width: 15px
+  height: 15px
+  padding: 0 1px
+  &:hover, &:active
+    background-position: 0 -15px
+
+#sn-twitter
+  +float-left
+  +clearfix
+
+#sn-twitter-link
+  +hide-text
+  background: image-url( "sprite/twitter.png" ) no-repeat
+  display: block
+  width: 15px
+  height: 15px
+  padding: 0 1px
+  &:hover, &:active
+    background-position: 0 -15px
+
+#nav-wrap
+  +clearfix
+  width: $default-width
+  height: 138px
+  margin: 0 auto
+  position: relative
+  border-bottom: 1px solid #e3e3e3
+
+#title
+  position: absolute
+  top: 30px
+  left: 0
+
+#home-link
+  +hide-text
+  background: image-url( "sprite/logo.png" )
+  display: block
+  width: 109px
+  height: 89px
+
+#nav
+  padding: 0 0 10px
+  position: absolute
+  top: 100px
+  right: 0
+
+.nav-item
+  +float-left
+  +clearfix
+
+.nav-item-h2
+
+.nav-item-link
+  +hide-text
+  +clearfix
+  font-family: $default-font
+  font-size: 14px
+  color: #949494
+  text-decoration: none
+  display: block
+
+#nav-our-clients-link
+  background: image-url( "sprite/our-clients.png" )
+  width: 81px
+  height: 12px
+  &:hover, &:active
+    background: image-url( "sprite/our-clients-on.png" )
+
+#nav-the-work-link
+  background: image-url( "sprite/the-work.png" )
+  width: 86px
+  height: 12px
+  &:hover, &:active
+    background: image-url( "sprite/the-work-on.png" )
+
+#nav-about-us-link
+  background: image-url( "sprite/about-us.png" )
+  width: 86px
+  height: 12px
+  &:hover, &:active
+    background: image-url( "sprite/about-us-on.png" )
+
+#nav-services-link
+  background: image-url( "sprite/services.png" )
+  width: 84px
+  height: 12px
+  &:hover, &:active
+    background: image-url( "sprite/services-on.png" )
+
+#nav-good-news-link
+  background: image-url( "sprite/good-news.png" )
+  width: 97px
+  height: 12px
+  &:hover, &:active
+    background: image-url( "sprite/good-news-on.png" )
+
+#nav-get-in-touch-link
+  background: image-url( "sprite/get-in-touch.png" )
+  width: 87px
+  height: 12px
+  &:hover, &:active
+    background: image-url( "sprite/get-in-touch-on.png" )
+
+#show-room
+  +clearfix
+  width: $default-width
+  padding: 40px 0
+  margin: 0 auto
+
+#learn-more
+  +hide-text
+  +float-left
+  +clearfix
+  background: image-url( "sprite/front-fa1.png" )
+  width: 390px
+  height: 407px
+  position: relative
+
+#learn-more-link
+  +hide-text
+  width: 110px
+  height: 34px
+  position: absolute
+  top: 300px
+  left: 25px
+
+#the-work
+  +hide-text
+  +float-left
+  +clearfix
+  background: image-url( "sprite/front-fa2.png" )
+  width: 510px
+  height: 407px
+  position: relative
+
+#the-work-link
+  +hide-text
+  width: 145px
+  height: 36px
+  position: absolute
+  top: 300px
+  left: 22px
+
+#preview-wrap
+  +clearfix
+  width: $default-width
+  padding: 0 0 120px
+  margin: 0 auto
+
+.preview-block
+  +float-left
+  +clearfix
+
+#the-work-preview
+  width: 340px
+  padding: 0 45px 0 0
+
+#the-work-preview-title
+  font-family: $default-font
+  font-size: 18px
+  color: #59a9c1
+  opacity: 0.8
+  padding: 15px 0
+  border-bottom: 1px solid #e3e3e3
+
+#good-news-preview
+  width: 515px
+
+#good-news-preview-title
+  font-family: $default-font
+  font-size: 18px
+  color: #59a9c1
+  opacity: 0.8
+  padding: 15px 0
+  border-bottom: 1px solid #e3e3e3
+
+.preview-item
+  +clearfix
+  padding: 15px 0 0
+
+.preview-item-clip
+  +float-left
+  +clearfix
+  padding: 0 20px 0 2px
+
+.preview-item-detail
+  +float-left
+  +clearfix
+  width: 180px
+
+.preview-item-title
+  font-family: $default-font
+  font-size: 12px
+  font-weight: bold
+  padding: 3px 0
+
+.preview-item-title-link
+  color: #000
+  text-decoration: none
+  &:hover, &:active
+    text-decoration: underline
+
+.preview-item-description
+  font-family: $default-font
+  font-size: 11px
+  color: #7b6f7a
+  opacity: 0.7
+  line-height: 13px
+
+.preview-item-link
+  font-family: $default-font
+  font-size: 11px
+  color: #59a9c1
+  text-decoration: none
+  &:hover, &:active
+    text-decoration: underline
+
+.good-news-preview-date
+  font-family: $default-font
+  font-size: 11px
+  color: #7b6f7a
+  opacity: 0.4
+  padding: 15px 0 0
+
+.good-news-preview-title
+  padding: 5px 0 0
+
+.good-news-preview-link
+  font-family: $default-font
+  font-size: 28px
+  color: #000
+  text-decoration: none
+  &:hover, &:active
+    color: #aaa
+
+#footer-wrap
+  +clearfix
+  background-color: rgba( 238, 238, 238, 0.3 )
+  border-top: 1px solid rgba( 192, 192, 192, 0.4 )
+
+#footer
+  +clearfix
+  font-family: $default-font
+  font-size: 9px
+  color: #7b6f7a
+  opacity: 0.5
+  width: $default-width
+  height: 80px
+  margin: 0 auto
+  position: relative
+
+.footer-item
+  padding: 0 5px
+
+.footer-link
+  color: #7b6f7a
+  text-decoration: none
+  &:hover, &:active
+    text-decoration: underline
+
+#footer-1
+  position: absolute
+  top: 20px
+  left: 0
+
+#footer-2
+  position: absolute
+  top: 20px
+  right: 0
