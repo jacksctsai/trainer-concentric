@@ -49,7 +49,9 @@ title: Concentric
     <p id="the-work-preview-title">THE WORK</p>
     <% data.workpreview.each do |wp| %>
     <div class="preview-item">
-      <img src="<%= wp.filename %>" alt="<%= wp.description %>" id="preview-item-clip-<%= wp.id %>" class="preview-item-clip">
+      <a href="#" id="preview-item-clip-link" title="<%= wp.title %>">
+        <img src="<%= wp.filename %>" alt="<%= wp.description %>" id="preview-item-clip-<%= wp.id %>" class="preview-item-clip">
+      </a>
       <div class="preview-item-detail">
         <p class="preview-item-title">
           <a href="#" class="preview-item-title-link" title="<%= wp.title %>"><%= wp.title %></a>
