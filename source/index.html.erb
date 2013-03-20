@@ -34,42 +34,44 @@ title: Concentric
     <% end %>
   </ul>
 </div>
-<div id="show-room">
-  <div id="learn-more">
-    <p id="learn-more-description">A sea of endless possibilities... centered around one goal.</p>
-    <a href="#" id="learn-more-link" title="Learn more">LEARN MORE</a>
-  </div>
-  <div id="the-work">
-    <p id="the-work-description">Victoria's Secret Body by Victoria<sup>&copy;</sub> Microsite</p>
-    <a href="#" id="the-work-link" title="The work">THE WORK</a>
-  </div>
-</div>
-<div id="preview-wrap">
-  <div id="the-work-preview" class="preview-block">
-    <p id="the-work-preview-title">THE WORK</p>
-    <% data.workpreview.each do |wp| %>
-    <div class="preview-item">
-      <a href="#" id="preview-item-clip-link" title="<%= wp.title %>">
-        <img src="<%= wp.filename %>" alt="<%= wp.description %>" id="preview-item-clip-<%= wp.id %>" class="preview-item-clip">
-      </a>
-      <div class="preview-item-detail">
-        <p class="preview-item-title">
-          <a href="#" class="preview-item-title-link" title="<%= wp.title %>"><%= wp.title %></a>
-        </p>
-        <p class="preview-item-description"><%= wp.description %></p>
-        <a href="#" class="preview-item-link" title="More about <%= wp.title %>">View Work</a>
-      </div>
+<div id="main">
+  <div id="show-room">
+    <div id="learn-more">
+      <p id="learn-more-description">A sea of endless possibilities... centered around one goal.</p>
+      <a href="#" id="learn-more-link" title="Learn more">LEARN MORE</a>
     </div>
-    <% end %>
+    <div id="the-work">
+      <p id="the-work-description">Victoria's Secret Body by Victoria<sup>&copy;</sub> Microsite</p>
+      <a href="#" id="the-work-link" title="The work">THE WORK</a>
+    </div>
   </div>
-  <div id="good-news-preview" class="preview-block">
-    <p id="good-news-preview-title">GOOD NEWS</p>
-    <% data.goodnewspreview.each do |gnp| %>
-    <p class="good-news-preview-date"><%= gnp.date %></p>
-    <h3 class="good-news-preview-title">
-      <a href="#" class="good-news-preview-link" title="<%= gnp.title %>"><%= gnp.title %></a>
-    </h3>
-    <% end %>
+  <div id="preview-wrap">
+    <div id="the-work-preview" class="preview-block">
+      <p id="the-work-preview-title">THE WORK</p>
+      <% data.workpreview.each do |wp| %>
+      <div class="preview-item">
+        <a href="#" id="preview-item-clip-link" title="<%= wp.title %>">
+          <img src="<%= wp.filename %>" alt="<%= wp.description %>" id="preview-item-clip-<%= wp.id %>" class="preview-item-clip">
+        </a>
+        <div class="preview-item-detail">
+          <p class="preview-item-title">
+            <a href="#" class="preview-item-title-link" title="<%= wp.title %>"><%= wp.title %></a>
+          </p>
+          <p class="preview-item-description"><%= wp.description %></p>
+          <a href="#" class="preview-item-link" title="More about <%= wp.title %>">View Work</a>
+        </div>
+      </div>
+      <% end %>
+    </div>
+    <div id="good-news-preview" class="preview-block">
+      <p id="good-news-preview-title">GOOD NEWS</p>
+      <% data.goodnewspreview.each do |gnp| %>
+      <p class="good-news-preview-date"><%= gnp.date %></p>
+      <h3 class="good-news-preview-title">
+        <a href="#" class="good-news-preview-link" title="<%= gnp.title %>"><%= gnp.title %></a>
+      </h3>
+      <% end %>
+    </div>
   </div>
 </div>
 <div id="footer-wrap">
