@@ -7,29 +7,29 @@ title: Concentric
     <p id="contact-info">
       <span id="contact-info-address">210 W 14th Street, Suite 3 New York, NY 10011</span>
       <span id="contact-info-phone">PH (917) 363 4324</span>
-      <a href="#" id="contact-info-link" title="Contact us">Contact Us</a>
+      <a id="contact-info-link" href="#" title="Contact us">Contact Us</a>
     </p>
     <div id="social-networks">
-      <div id="sn-hint">Follow Us On</div>
-      <div id="sn-facebook">
-        <a href="#" id="sn-facebook-link" title="Become our facebook fans">Facebook</a>
+      <div id="social-networks-hint">Follow Us On</div>
+      <div id="social-networks-facebook">
+        <a id="social-networks-facebook-link" href="#" title="Become our facebook fans">Facebook</a>
       </div>
-      <div id="sn-twitter">
-        <a href="#" id="sn-twitter-link" title="Follow us on Twitter">Twitter</a>
+      <div id="social-networks-twitter">
+        <a id="social-networks-twitter-link" href="#" title="Follow us on Twitter">Twitter</a>
       </div>
     </div>
   </div>
 </div>
 <div id="nav-wrap">
   <h1 id="title">
-    <a href="#" id="home-link" title="concentric">concentric</a>
+    <a id="home-link" href="#" title="concentric">concentric</a>
   </h1>
   <ul id="nav">
     <% data.menu.each do |m| %>
     <li id="nav-<%= m.id %>" class="nav-item">
-      <h2 class="nav-item-h2">
-        <a href="#" id="nav-<%= m.id %>-link" class="nav-item-link" title="<%= m.name %>"><%= m.name %></a>
-      </h2>
+      <h3 class="nav-item-h3">
+        <a id="nav-<%= m.id %>-link" class="nav-item-link" href="#" title="<%= m.name %>"><%= m.name %></a>
+      </h3>
     </li>
     <% end %>
   </ul>
@@ -38,38 +38,38 @@ title: Concentric
   <div id="show-room">
     <div id="learn-more">
       <p id="learn-more-description">A sea of endless possibilities... centered around one goal.</p>
-      <a href="#" id="learn-more-link" title="Learn more">LEARN MORE</a>
+      <a id="the-work-link" href="#" title="The work">THE WORK</a>
     </div>
     <div id="the-work">
-      <p id="the-work-description">Victoria's Secret Body by Victoria<sup>&copy;</sub> Microsite</p>
-      <a href="#" id="the-work-link" title="The work">THE WORK</a>
+      <p id="the-work-description">Foreign Affairs Mobile Website</p>
+      <a id="learn-more-link" href="#" title="Learn more">LEARN MORE</a>
     </div>
   </div>
   <div id="preview-wrap">
     <div id="the-work-preview" class="preview-block">
-      <p id="the-work-preview-title">THE WORK</p>
+      <h3 id="the-work-preview-title">THE WORK</h3>
       <% data.workpreview.each do |wp| %>
       <div class="preview-item">
-        <a href="#" id="preview-item-clip-link" title="<%= wp.title %>">
+        <a id="preview-item-clip-link" href="#" title="<%= wp.title %>">
           <img src="<%= wp.filename %>" alt="<%= wp.description %>" id="preview-item-clip-<%= wp.id %>" class="preview-item-clip">
         </a>
         <div class="preview-item-detail">
-          <p class="preview-item-title">
-            <a href="#" class="preview-item-title-link" title="<%= wp.title %>"><%= wp.title %></a>
-          </p>
+          <h4 class="preview-item-title">
+            <a class="preview-item-title-link" href="#" title="<%= wp.title %>"><%= wp.title %></a>
+          </h4>
           <p class="preview-item-description"><%= wp.description %></p>
-          <a href="#" class="preview-item-link" title="More about <%= wp.title %>">View Work</a>
+          <a class="preview-item-link" href="#" title="More about <%= wp.title %>">View Work</a>
         </div>
       </div>
       <% end %>
     </div>
     <div id="good-news-preview" class="preview-block">
-      <p id="good-news-preview-title">GOOD NEWS</p>
+      <h3 id="good-news-preview-title">GOOD NEWS</h3>
       <% data.goodnewspreview.each do |gnp| %>
       <p class="good-news-preview-date"><%= gnp.date %></p>
-      <h3 class="good-news-preview-title">
-        <a href="#" class="good-news-preview-link" title="<%= gnp.title %>"><%= gnp.title %></a>
-      </h3>
+      <h4 class="good-news-preview-title">
+        <a class="good-news-preview-link" href="#" title="<%= gnp.title %>"><%= gnp.title %></a>
+      </h4>
       <% end %>
     </div>
   </div>
@@ -81,7 +81,7 @@ title: Concentric
       <span class="footer-item">210 W 14th Street, Suite 3 New York, NY 10011</span>
       <span class="footer-item">PH (917) 363 4324</span>
       <span class="footer-item">
-        <a href="#" class="footer-link" title="Contact Us">Contact Us</a>
+        <a class="footer-link" href="#" title="Contact Us">Contact Us</a>
       </span>
     </p>
     <p id="footer-2">&copy; Copyright 2007-2010 Concentric Studio. All Rights Reserved</p>
